@@ -82,7 +82,7 @@ function sendEmail($to,$name,$subject,$text,$attachments)
         $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
         //Recipients
-        $mail->setFrom('fabiohenlima@gmail.com', $name);
+        $mail->setFrom('mail@exemple.com', $name);
         $mail->addAddress($to, 'Joe User');   
         // home/fabiolima/Pictures/fut.jpeg
         if(!empty($attachments)) {
